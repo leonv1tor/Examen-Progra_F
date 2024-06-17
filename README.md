@@ -1,10 +1,10 @@
 # Examen-Progra_F
-1.                                              EL PROBLEMA
+1.                                 EL PROBLEMA
 
 En nuestra empresa, se nos ha solicitado desarrollar un modelo de base de datos simple para gestionar eventos asociados a fechas específicas. El objetivo principal es crear un sistema que permita agregar, eliminar, buscar e imprimir eventos de manera eficiente. Este proyecto responde a la necesidad de tener una herramienta interna que optimice la organización de eventos sin depender de soluciones externas que podrían no ajustarse completamente a nuestras necesidades específicas.
 
 
-2.                 EXPLICACIÓN DE BASES DE DATOS EXISTENTES Y JUSTIFICACIÓN DEL NUEVO DESARROLLO
+2.                                 EXPLICACIÓN DE BASES DE DATOS EXISTENTES Y JUSTIFICACIÓN DEL NUEVO DESARROLLO
 
 Comparativa de Bases de Datos Existentes
 Para justificar la implementación de una nueva base de datos, es necesario primero revisar las opciones disponibles en el mercado y compararlas en términos de funcionalidad, rendimiento y adecuación a nuestras necesidades específicas.
@@ -36,7 +36,7 @@ Después de analizar las bases de datos existentes, concluimos que ninguna de el
             Evitar la sobrecarga de funcionalidad innecesaria que presentan las soluciones comerciales.
 
 
-3.                                      ESTRUCTURA DEL REPOSITORIO
+3.                                 ESTRUCTURA DEL REPOSITORIO
 
 //FALTA ACLARAR ESTRUCTURACION DEL REPOSTORIO 
 
@@ -74,17 +74,17 @@ Manejo de Errores
 •	Día Inválido: void CheckDayValidity(int day);
 
 
-5.                                          DIAGRAMA DE FLUJO O PSEUDOCODIGO 
+5.                                 DIAGRAMA DE FLUJO O PSEUDOCODIGO 
 
             Sección en construcción.
             Explicación del Diagrama
             Explicación pendiente.
-6.                                                      CREDITOS
+6.                                 CREDITOS
 
 Leonel Joe Jaldin Gutierrez (LEONCITHOR)
 
 
-7.                                          HERRAMIENTAS UTILIZADAS
+7.                                 HERRAMIENTAS UTILIZADAS
 
     Lenguaje de Programación: C++
     Compilador: g++
