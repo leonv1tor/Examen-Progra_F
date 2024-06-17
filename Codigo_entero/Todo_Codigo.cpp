@@ -55,3 +55,16 @@ void agregarEvento(const string& fecha, const string& evento) {
         bd[fecha].insert(evento);
     }
 }
+
+//funcio eliminar evento
+void eliminarEvento(const string& fecha, const string& evento){
+    int year, month, day;
+    if (validarFecha(fecha, year, month, day)){
+        if(bd[fecha].erase(evento)) {
+            cout << "Borrador exitosamente" << endl;
+        } else {
+            cout << "Evento no encontrado" << endl;
+        }
+    }
+}
+
