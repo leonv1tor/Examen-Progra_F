@@ -21,3 +21,10 @@ void imprimir();
 string obtenerPrimeraPalabra(string str);
 string eliminarPrimeraPalabra(string cadena);
 string obtenerLaFecha(string cadena);
+
+//Funcion que permite pausar el programa antes de continuar
+void pausar() {
+    cout << "\nIngrese enter para continuar: ";
+    cin.ignore();//Ignora cualquier entrada pendiente
+    con.get();// Se espera a que se presione enter
+}
