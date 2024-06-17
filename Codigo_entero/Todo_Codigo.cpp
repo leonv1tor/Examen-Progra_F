@@ -28,3 +28,22 @@ void pausar() {
     cin.ignore();//Ignora cualquier entrada pendiente
     con.get();// Se espera a que se presione enter
 }
+
+//Funcion validar fecha
+bool validarFecha(const string& fecha, int& year, int& month, int& day){
+    istringstream iss(fecha);
+    char dash1, dash2;
+    if (iss >> year >> dash1 >>month >> dash2 >> day && dash1 == '-', '/' && dash2 == '-', '/'){
+        if(month < 1 || month >12){
+            cout << "El valor del mes no es valido: " << month << endl;
+            return false;
+        }
+        if (day < 1 || day > 31) {
+            cout << "El valor del dia no es valido: " << day << endl;
+            return false;
+        }
+        return true;
+    }
+    cout << "Formato de fecha incorrecto: " << fecha <<endl;
+    return false;
+}
