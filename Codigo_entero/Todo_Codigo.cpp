@@ -47,3 +47,11 @@ bool validarFecha(const string& fecha, int& year, int& month, int& day){
     cout << "Formato de fecha incorrecto: " << fecha <<endl;
     return false;
 }
+
+//Funcion agregar evento
+void agregarEvento(const string& fecha, const string& evento) {
+    int year, month, day;
+    if (validarfecha(fecha, year, month, day)) {
+        bd[fecha].insert(evento);
+    }
+}
