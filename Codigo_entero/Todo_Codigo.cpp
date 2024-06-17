@@ -56,7 +56,7 @@ void agregarEvento(const string& fecha, const string& evento) {
     }
 }
 
-//funcio eliminar evento
+//funcion eliminar evento
 void eliminarEvento(const string& fecha, const string& evento){
     int year, month, day;
     if (validarFecha(fecha, year, month, day)){
@@ -68,3 +68,14 @@ void eliminarEvento(const string& fecha, const string& evento){
     }
 }
 
+//funcion eliminar eventos
+void eliminarEventos(const string& fecha){
+    int year, month, day;
+    if(validarFecha(fecha, year, month, day)){
+        if(bd.count(fecha)){
+            for(const auto& e : bd[fecha]){
+                cout << e << endl;
+            }
+        }
+    }
+}
