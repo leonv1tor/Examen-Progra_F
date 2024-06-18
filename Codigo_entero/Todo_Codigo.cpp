@@ -26,11 +26,11 @@ string obtenerLaFecha(string cadena);
 void pausar() {
     cout << "\nIngrese enter para continuar: ";
     cin.ignore();//Ignora cualquier entrada pendiente
-    con.get();// Se espera a que se presione enter
+    cin.get();// Se espera a que se presione enter
 }
 
 //Funcion validar fecha
-bool validarFecha(const string& fecha, int& year, int& month, int& day){
+bool validarFecha(const string& fecha, int& year, int& month, int& day) {
     istringstream iss(fecha);
     char dash1, dash2;
     if (iss >> year >> dash1 >>month >> dash2 >> day && dash1 == '-', '/' && dash2 == '-', '/'){
@@ -102,3 +102,5 @@ void imprimir(){
         }
     }
 }
+
+//
