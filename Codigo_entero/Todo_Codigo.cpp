@@ -89,3 +89,16 @@ void buscarEventoConFecha(const string& fecha){
         }
     }
 }
+
+//funcion imprimir
+void imprimir(){
+    if(bd.empty()){
+    } else {
+        cout << "Imprimiendo evento:\n\n";
+        for(const auto& [fecha, eventos] : bd){
+            for(const auto& evento : eventos){
+                cout << fecha <<" | "<< evento << endl
+            }
+        }
+    }
+}
