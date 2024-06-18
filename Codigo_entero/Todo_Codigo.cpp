@@ -72,6 +72,16 @@ void eliminarEvento(const string& fecha, const string& evento){
 void eliminarEventos(const string& fecha){
     int year, month, day;
     if(validarFecha(fecha, year, month, day)){
+        int count = bd[fecha].size();
+        bd.erase(fecha);
+        cout << "Eliminado " << count << " eventos" << endl;
+    }
+}
+
+//funcion buscar evento con fecha
+void buscarEventoConFecha(const string& fecha){
+    int year, month, day;
+    if(validarFecha(fecha, year, month, day)){
         if(bd.count(fecha)){
             for(const auto& e : bd[fecha]){
                 cout << e << endl;
