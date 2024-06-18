@@ -22,14 +22,12 @@ string obtenerPrimeraPalabra(string str);
 string eliminarPrimeraPalabra(string cadena);
 string obtenerLaFecha(string cadena);
 
-//Funcion que permite pausar el programa antes de continuar
 void pausar() {
     cout << "\nIngrese enter para continuar: ";
     cin.ignore();//Ignora cualquier entrada pendiente
     cin.get();// Se espera a que se presione enter
 }
 
-//Funcion validar fecha
 bool validarFecha(const string& fecha, int& year, int& month, int& day) {
     istringstream iss(fecha);
     char dash1, dash2;
@@ -48,7 +46,6 @@ bool validarFecha(const string& fecha, int& year, int& month, int& day) {
     return false;
 }
 
-//Funcion agregar evento
 void agregarEvento(const string& fecha, const string& evento) {
     int year, month, day;
     if (validarfecha(fecha, year, month, day)) {
@@ -56,7 +53,6 @@ void agregarEvento(const string& fecha, const string& evento) {
     }
 }
 
-//funcion eliminar evento
 void eliminarEvento(const string& fecha, const string& evento){
     int year, month, day;
     if (validarFecha(fecha, year, month, day)){
@@ -68,7 +64,6 @@ void eliminarEvento(const string& fecha, const string& evento){
     }
 }
 
-//funcion eliminar eventos
 void eliminarEventos(const string& fecha){
     int year, month, day;
     if(validarFecha(fecha, year, month, day)){
@@ -78,7 +73,6 @@ void eliminarEventos(const string& fecha){
     }
 }
 
-//funcion buscar evento con fecha
 void buscarEventoConFecha(const string& fecha){
     int year, month, day;
     if(validarFecha(fecha, year, month, day)){
@@ -90,7 +84,6 @@ void buscarEventoConFecha(const string& fecha){
     }
 }
 
-//funcion imprimir
 void imprimir(){
     if(bd.empty()){
     } else {
@@ -103,4 +96,3 @@ void imprimir(){
     }
 }
 
-//
