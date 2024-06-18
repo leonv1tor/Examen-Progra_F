@@ -96,3 +96,14 @@ void imprimir(){
     }
 }
 
+string obtenerPrimeraPalabra(string str){
+    string abc = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890-+";
+    while(0 < str.size() && abc.find(str[0]) == string::npos){
+        str.erase(0, 1);
+    }
+    int pos = str.find(' ');
+    if(pos == string::npos){//npos significa no encontrado
+        return str;
+    }
+    return str.substr(0, pos);//devuelve la palabra hasta en el 1er espacio
+}
